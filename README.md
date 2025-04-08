@@ -1,58 +1,110 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 📝 Todo App (React + TypeScript + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Todo List application built using **React**, **TypeScript**, and **Tailwind CSS v3**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v3](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/) (Build Tool)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Features
+
+- Add a new task
+- Mark task as completed
+- Delete a task
+- Responsive UI
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── components/
+│   ├── TodoForm.tsx
+│   ├── TodoItem.tsx
+│   └── TodoList.tsx
+├── types/
+│   └── index.ts
+├── App.tsx
+├── main.tsx
+├── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Setup Instructions
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/LEAKONO/typescript-todo.git
+cd my-todo-app
 ```
-=======
-# typescript-todo
->>>>>>> 6ca1e401105a760c4aff6d65003efe782b32c5a5
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Run the development server:**
+
+```bash
+npm run dev
+```
+
+4. **Build for production:**
+
+```bash
+npm run build
+```
+
+---
+
+## 📷 Preview
+
+
+
+---
+
+## ✅ Commit Messages Example
+
+```bash
+git commit -m "Initialize Vite + React + TypeScript + Tailwind CSS v3"
+git commit -m "Add Todo type interface"
+git commit -m "Add TodoForm component with input and button"
+git commit -m "Add TodoItem component with toggle and delete"
+git commit -m "Add TodoList component that renders list of todos"
+git commit -m "Implement App logic with state and methods"
+git commit -m "Render App and import Tailwind CSS"
+```
+
+---
+
+## 📃 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 💡 Future Improvements
+
+- Add localStorage persistence
+- Add filters: All / Active / Completed
+- Add dark mode toggle
+- Add animations with Framer Motion
+- Deploy to Vercel or Netlify
+
+---
+
+## ✨ Author
+
+- Emmanuel Leakono
+
